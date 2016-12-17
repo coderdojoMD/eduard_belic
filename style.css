@@ -1,4 +1,128 @@
-#is{
-	width: 90px ;
-height:  60px  ;
+ .iss{
+  width: 90px ;
+  height:  60px  ;
+  }
+.image-wot{
+  background-image: url("images/wot-t.jpg");
+  height: 390px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  }
+
+.navbar{
+  padding: 0.4%;
+  border-bottom: 5px solid white;
+  }
+
+.search{
+  border-bottom: 2px solid red;
+
+  }
+.search-btn{
+  border: 2px solid black;
+  cursor: pointer;
+
+  }
+
+
+/*Images of tanks*/
+.img-is, .img-is3, .img-is6{
+  width: 450px;
+  border: 5px solid black;        
+  cursor: pointer;
+  }
+
+.img-oho, .img-oi {
+  width: 450px;
+  border: 5px solid black;        
+  cursor: pointer;
+  }
+
+.img-e100, .img-tigr1, .img-leopard1{
+  width: 450px;
+  border: 5px solid black;        
+  cursor: pointer;
+
+  }
+/*END OF Images of tanks*/
+
+
+h1{
+  text-align: center; 
+   }
+
+.header{
+  background-color: #282828  ;  
+  color: white;
+
+  }
+
+footer{
+  background-color: #101010  ;
+  height: 100px;
+  color: #404040  ;
+  }
+
+
+/*left and right colums*/
+#rightcol{
+  height: 4150px;
+  background-color: #101010  ;   
+  float: right ;
+  word-break: break-all;
+  word-wrap: break-word;
+  }
+
+#leftcol{
+  height: 4150px;
+  background-color: #101010  ;
+  float: left;
+  word-break: break-all;
+  word-wrap: break-word;
+  }
+/* END OF left and right colums*/
+
+
+/*Footer */
+/*.contact-right*/
+.contact-right{
+  cursor: pointer;
+  float: right;
+  word-break: break-all;
+  word-wrap: break-word;
 }
+
+.facebook-right{
+  float: left;
+  cursor: pointer;
+}
+.google-left{
+  float: right;;
+  cursor: pointer;
+}
+.twitter-center{
+  cursor: pointer;
+
+}
+/*End of .contact-right*/
+/*.contact-left*/
+.contact-left{
+  float: left;
+  cursor: pointer;
+  word-break: break-all;
+  word-wrap: break-word;
+}  
+.twitch-right{
+  float: left;
+  cursor: pointer;
+}
+.github-left{
+  float: right;;
+  cursor: pointer;
+}
+.vk-center{
+
+  cursor: pointer;
+}
+/*End of .contact-left*/
+/*End of Footer*/

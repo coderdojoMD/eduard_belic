@@ -1,63 +1,200 @@
- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header>
-<h1 class="text-center">World of Tanks</h1>
-  
-   
-<nav class="navbar navbar-inverse ">
 
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Tanks in <abbr title="World of Tanks">Wot</abbr></a>
-    </div>
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+			<title>Bootstrap Example</title>
+			<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="style.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	</head>
+	<body  data-spy="scroll" data-target=".navbar">
+		<div class="header">
+		<header>
+			<div class="image-wot"></div>
+			<nav class="navbar navbar-inverse navbar-fixed-top" >
+					<div class="container-fluid">
+						<div class="navbar-header">
+								<a class="navbar-brand" href="#">Tanks in <abbr title="World of Tanks">Wot</abbr></a>
+						</div>
 
-    <ul class="nav navbar-nav">
-      
-      <li class="active"><a href="#">Home</a></li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#ssr">ССCР
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Ис <img id="is"src="images/indexs.jpg" alt=""></a></li>
-          <li><a href="#">Ис 3 <img id="is"src="images/das.jpg" alt=""></a></li>
-          
-          <li><a href="#">Ис 3 <img id="is"src="images/index.jpg" alt=""></a></li>
-        </ul>
-      </li>
-      <li><a href="#germany">Германия</a></li>
-      <li><a href="#yapony">Япония</a></li>
-      <button class="btn btn-danger navbar-btn">В Бой</button>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
+						<ul class="nav navbar-nav">
+								<li class="active"><a href="#home">Home</a></li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#ssr">ССCР<span class="caret"></span></a>
+											<ul class="dropdown-menu">
+												<li><a href="#is">Ис   <div class="row"><img class="iss" src="images/indexs.jpg" alt=""></div></a></li>
+												<li><a href="#is3">Ис 3   <div class="row"><img class="iss" src="images/das.jpg" alt=""></div></a></li>
+												<li><a href="#is6">Ис 6  <div class="row"><img class="iss"src="images/index.jpg" alt=""></div></a></li>
+											</ul>
 
-<li><a href="#"><span class="glyphicon glyphicon-user"> Log-In	</span></a></li>
-<li><a href="#"><span class="glyphicon glyphicon-log-out"> Log-Out	</span></a></li>
- 
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#germany">Германия<span class="caret"></span></a>
+										<ul class="dropdown-menu">
+												<li><a href="#tigr1">Тигр 1<div class="row"><img class="iss" src="images/tigr1.jpg" alt=""></div></a></li>
+												<li><a href="#leopard1">Леопард 1 <div class="row">  <img class="iss" src="images/leopard1.jpg" alt=""></div></a></li>
+												<li><a href="#e100">E 100   <div class="row"><img class="iss" src="images/e100.jpg" alt=""></div></a></li>
 
-    </ul>
-  
-</nav>
-</div>
-<div class="row content">
-    <div class="col-sm-2 ">
-      <h4>John's Blog</h4>
-      
-         
-      
-    </div>
-    </div>
+										</ul>
+				
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#yapony">Япония<span class="caret"></span></a>
+										<ul class="dropdown-menu">
+												<li><a href="#oho">Оhо   <div class="row"><img class="iss" src="images/oho.jpg" alt=""></div></a></li>
+												<li><a href="#oi"> Ои  <div class="row"><img class="iss" src="images/oi.jpg" alt=""></div></a></li>
+										</ul>
+							</li>
+			
+						 </ul>
 
-</header>
+						<div class="navbar-form navbar-left">
+								<form>
+										<div class="form-group"> 
+											<input list="tanks" placeholder="Search" class=" search form-control">
+								<datalist id="tanks">
+									<option value="Ис"></option>
+									<option value="Ис 3"></option>
+									<option value="Ис 5"></option>
+									<option value="Ис 6"></option>
+									<option value="Тигр 1"></option>
+									<option value="Леопард 1"></option>
+									<option value="E 100"></option>
+									<option value="O-i"></option>
+									<option value="O-Ho"></option>
+									<option value="O-Ni"></option>
+								</datalist> 
+						</div>
 
-</body>
-</html>
+									<button type="submit" class="btn search-btn btn-primary"><i class="fa fa-paper-plane">Submit</i></button>
+							 </form>
+						</div>
+
+						<ul class="nav navbar-nav navbar-right">
+
+							<li><a href="#"><span class="glyphicon glyphicon-user "> Profile </span></a></li>
+							<li><a href="https://ru.wargaming.net/id/signin/?next=/id/openid/2262669760340498787/&trust_root=https%3A//worldoftanks.ru/"><span class="glyphicon glyphicon-log-in"> Log-In  </span></a></li>
+							<li><a href="https://ru.wargaming.net/registration/ru/?utm_campaign=cmenu_worldoftanks.ru&utm_medium=5211&utm_source=wotcpu&sid=SIDyrVULhx8o0Cvc6OMh3eIyI8wWYZK03fSPwlPuV4rqKX1IasHObH1uWMn7wNQHenUxnHLa_SdoOT2ZQP3wJT8OjwCFawSFrf5ka14OvYARm3gA9qz4mffeMrwSx_rN2yCbATu1VneUFnnglO-ZSnrg5cMCJY5VwwWDetUh6xBLUbez993Ovlu2_mcWRNwPVa_1VvPYEmDUoxU"> <i class="fa fa-envelope">   New account</i>  </a></li>
+					</ul>
+					</div>
+			</nav>
+			
+			<div class="row content">
+			<div class="col-md-2" id="leftcol"></div>
+			<div class="col-md-8">
+				 <div class="text-center">
+					<div id="home">
+							<h1> Home </h1>
+							<details>
+						<summary>Home</summary>
+						<h2>This site is about <abbr title="World of Tanks">Wot</abbr></h2>
+								<p>World of Tanks — это массовая многопользовательская онлайн-игра, полностью посвященная бронированным машинам середины XX века. Игроки получат возможность плечом к плечу сражаться с поклонниками стальных гигантов со всех уголков планеты, отстаивая свои претензии на мировое танковое господство.</p>
+				</details>
+						</div>
+						<br>
+						<br>
+						<br> <br>
+						<br>
+						<br> <br>
+						<br>
+						<br>
+					<div id="is"> 
+						<h1 class="text-center">Ис 1</h1>
+								<img  class="img-is" src="images/indexs.jpg" alt="Is 1">
+								<p>ИС-1 — советский тяжёлый танк периода Второй мировой войны. Аббревиатура ИС означает «Иосиф Сталин» — официальное название серийных советских тяжёлых танков выпуска 1943—1953 гг. Индекс 1 соответствует первой серийной модели танка этого семейства. В годы Второй мировой войны вместе с обозначением ИС-1 на равных использовалось название ИС-85, в этом случае индекс 85 означает калибр основного вооружения машины.</p>
+								
+						 </div>
+						<br>
+						<br>
+						<br>
+						<div id="is3">
+							<h1 > Ис 3</h1>
+							<img class="img-is3" src="images/das.jpg" alt="Is3">
+							<p>ИС-3 (Объект 703) — советский тяжёлый танк разработки периода Великой Отечественной войны, запущенный в серийное производство в последние её дни и не успевший принять в ней участие. Поэтому эту боевую машину чаще считают одним из первых послевоенных советских танков. Аббревиатура ИС означает «Иосиф Сталин» — официальное название серий советских тяжёлых танков выпуска 1943—1953 гг. Индекс 3 соответствует третьей серийной модели танка этого семейства. Из-за характерной формы верхней лобовой части корпуса получил прозвище «Щука».</p>
+						</div>
+						<br>
+						<br>
+						<br>
+					<div id="is6">
+							<h1>  Ис 6 </h1>
+							<img class="img-is6" src="images/index.jpg" alt="Is6">
+							<p>ИС-6 — опытный тяжелый советский танк времен Второй мировой войны.</p>
+						</div>
+						<br>
+						<br>
+						<br>
+						<div id="tigr1">
+							<h1> Тигр 1 </h1>
+							<img class="img-tigr1" src="images/tigr1.jpg" alt="Tiger 1">
+							<p>Panzerkampfwagen VI Ausf. H1, «Тигр» — немецкий тяжёлый танк времён Второй мировой войны, прототипом которого являлся танк VK4501 (H), разработанный в 1942 году фирмой «Хеншель» под руководством Эрвина Адерса. Наряду с прототипом фирмы «Хеншель» руководству Рейха был представлен и проект Фердинанда Порше — VK4501 (P), но выбор военной комиссии пал на вариант «Хеншель», хотя Гитлер более благоволил к изделию Порше.
+
+												Общее количество выпущенных машин — 1354 единицы, включая 5 танков конструкции Порше.[источник не указан 75 дней]. Затраты на производство одного танка «Тигр» — 800 000 рейхсмарок (в два раза дороже любого танка тех времён).
+
+												В ведомственной сквозной классификации бронетехники нацистской Германии изначально танк получил обозначение Pz.Kpfw.VI Ausf.H1, индекс управления вооружений Sd.Kfz.182. В марте 1943 производственное обозначение изменили на Pz.Kpfw. Tiger, Sd.Kfz.181 (одновременно для новой модификации «Тигр-II» ввели обозначение Pz.Kpfw. Tiger Ausf. B, Sd.Kfz.182). Приказом Гитлера в январе 1944 г. танк был обозначен Panzerkampfwagen Tiger Ausf.E. После принятия на вооружение танков Tiger II, неофициально также использовалось название Tiger I, с добавлением римской единицы. Производственная модификация была при этом только одна, хотя в конструкцию танка вносились небольшие изменения.
+
+							В советских документах танк «Тигр» обычно обозначался просто как T-6 или T-VI</p>
+						</div>
+						<br>
+						<br>
+						<br>
+						<div id="leopard1">
+							<h1> Леопард 1 </h1>
+							<img class="img-leopard1" src="images/leopard1.jpg" alt="Leopard1">
+							<p>Леопард 1 (нем. Leopard) — основной боевой танк ФРГ до 1980 г. Танк до сих пор находится на вооружении армий различных стран мира и постоянно модернизируется. Находился на вооружении Бундесвера вплоть до 2010 г.</p>
+						</div>
+						<br>
+						<br>
+						<br>
+						<div id="e100">
+							<h1> E 100 </h1>
+								<img class="img-is6" src="images/e100.jpg" alt="E 100">
+						<p>Е-100 — проект сверхтяжёлого танка с массой ~130-140 тонн, разрабатывался как альтернатива разработанному Ф. Порше сверхтяжёлому танку Maus, которая при сходных боевых характеристиках с «Маусом» будет достаточно технологичной для массового производства. Проектирование началось 30 июля 1943 года в Фридберге. Разработку конструкции и постройку опытного образца вела фирма «Adler». Несмотря на личный приказ Гитлера в конце 1944 года прекратить все работы над сверхтяжелыми танками (касающийся как Е-100, так и разрабатываемого параллельно с ним «Maus»), проектирование продолжалось медленными темпами и была начата постройка прототипа. Продолжались работы на заводе Henschel в Хаустенбеке и на полигоне Зеннелагер вплоть до окончания войны. Незавершенный опытный образец (шасси без башни) был захвачен в Зеннелагере на заводе «Хеншель» английскими войсками[2]. В июне 1945 года Е-100 был переправлен в Великобританию для всесторонних испытаний. Полуготовый Е-100 был отправлен на металлолом, посему до наших дней не сохранился.</p>
+						</div>
+						<br>
+						<br>
+						<br>
+					<div id="oho">
+							<h1> O-Ho </h1>
+							<img class="img-oho" src="images/oho.jpg" alt="Оho">
+							<p>O-Ho был дальнейшим развитием идеи сверхтяжёлого танка с улучшенной бронезащитой. Танк имел неплохое вооружение, дающее возможность вести круговой обстрел. Проект машины был свёрнут в связи с окончанием войны. Танк в завершённом виде построен не был, в боевых действиях не применялся.</p>
+						</div>
+						<br>
+						<br>
+						<br>
+					<div id="oi">
+							<h1> O-i </h1>
+							<img class="img-oi" src="images/oi.jpg" alt="Ои">
+							<p>О-И — разработанное Японией в 1936—1945 годах семейство сверхтяжелых танков, которые должны были использоваться для нападения на СССР, Китай, и для обороны Японии от американских линкоров и десанта. Достоверные сведения о начале постройки опытного образца отсутствуют. Проектировался в различных вариантах</p>
+						</div>
+					</div>
+			</div>
+
+				<div class="col-md-2" id="rightcol"></div>
+				<br><br>
+			</div>
+               
+		</header>
+		</div>
+  		
+     	<footer class="container-fluid text-center">
+     	   <div class="col-md-4 contact-right" > 
+     		<p class="text-center">Contact us in: </p>
+     			<p class="google-left"><i class="fa fa-google-plus" aria-hidden="true">  Google+</i></p>
+     			<p class="facebook-right"><i class="fa fa-facebook-square" aria-hidden="true">  Facebook</i> </p>
+     			<p class="twitter-center"><i class="fa fa-twitter" aria-hidden="true">  Twiter</i></p>
+     		</div>
+         	
+         	<div class="col-md-4 contact-left" > 
+     			<p class="text-center">Contact us in: </p>
+     			<p class="github-left"><i class="fa fa-github" aria-hidden="true">  GitHub</i></p>
+     			<p class="twitch-right"><i class="fa fa-twitch">  Twitch</i></p>
+     			<p class="vk-center"><i class="fa fa-vk" aria-hidden="true">  Vk</i></p>
+     		 </div>
+   		</footer>
+   </body>
+   </html>
