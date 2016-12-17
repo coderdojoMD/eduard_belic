@@ -14,6 +14,7 @@
   border-bottom: 5px solid white;
   }
 
+/*search-Form*/
 .search{
   border-bottom: 2px solid red;
 
@@ -23,7 +24,7 @@
   cursor: pointer;
 
   }
-
+/*finish style search-Form*/
 
 /*Images of tanks*/
 .img-is, .img-is3, .img-is6{
@@ -125,4 +126,26 @@ footer{
   cursor: pointer;
 }
 /*End of .contact-left*/
-/*End of Footer*/
+/*End of Footer
+*/
+
+
+/*style links*/
+a:link{
+ color: #404040;
+}
+a:visited {
+ color: aqua;
+}
+a:hover {
+ color: red;
+}
+a:active {
+ color: yellow;
+}
+a{
+
+text-decoration: none;
+}
+
+/*finish style links*/
