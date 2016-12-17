@@ -1,151 +1,172 @@
- .iss{
-  width: 90px ;
+ /*height of all elements*/
+.iss{
   height:  60px  ;
-  }
+ }
 .image-wot{
-  background-image: url("images/wot-t.jpg");
   height: 390px;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  }
+ }
+footer{
+  height: 100px;
+ }
+#rightcol{
+  height: 4150px;
+ }
+#leftcol{
+  height: 4150px;
+ }
+/*END(from line 1)*/
 
-.navbar{
-  padding: 0.4%;
-  border-bottom: 5px solid white;
-  }
+/*width of all elements*/
+.img-is, .img-is3, .img-is6{
+  width: 450px;
+ }
+.img-oho, .img-oi {
+  width: 450px;
+ }
+.img-e100, .img-tigr1, .img-leopard1{
+  width: 450px;
+ }
+.iss{
+  width: 90px ;
+ }
+/*END(from line 19)*/
+
 
 /*search-Form*/
 .search{
   border-bottom: 2px solid red;
-
-  }
+ }
 .search-btn{
   border: 2px solid black;
   cursor: pointer;
+ }
+/*finish style search-Form(from line 35)*/
 
-  }
-/*finish style search-Form*/
 
 /*Images of tanks*/
 .img-is, .img-is3, .img-is6{
-  width: 450px;
   border: 5px solid black;        
   cursor: pointer;
-  }
-
+ }
 .img-oho, .img-oi {
-  width: 450px;
   border: 5px solid black;        
   cursor: pointer;
-  }
-
+ }
 .img-e100, .img-tigr1, .img-leopard1{
-  width: 450px;
   border: 5px solid black;        
   cursor: pointer;
+ }
+.image-wot{
+  background-image: url("images/wot-t.jpg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+ }
+.navbar{
+  padding: 0.4%;
+  border-bottom: 5px solid white;
+ }
+/*END OF Images of tanks(from line 46)*/
 
-  }
-/*END OF Images of tanks*/
 
-
-h1{
-  text-align: center; 
-   }
-
+/*color and background-color of elements(without links)*/
 .header{
   background-color: #282828  ;  
   color: white;
-
-  }
-
+ }
 footer{
   background-color: #101010  ;
-  height: 100px;
   color: #404040  ;
-  }
+ }
+#rightcol{
+  background-color: #101010  ;  
+ }
+#leftcol{
+  background-color: #101010  ;  
+ }
+/*END(from line 71)*/
 
+h1{
+  text-align: center; 
+ }
 
 /*left and right colums*/
 #rightcol{
-  height: 4150px;
-  background-color: #101010  ;   
   float: right ;
   word-break: break-all;
   word-wrap: break-word;
-  }
-
+ }
 #leftcol{
-  height: 4150px;
-  background-color: #101010  ;
   float: left;
   word-break: break-all;
   word-wrap: break-word;
-  }
-/* END OF left and right colums*/
+ }
+/* END OF left and right colums(from line 92)*/
 
+/*!!FOOTER!! */
 
-/*Footer */
 /*.contact-right*/
 .contact-right{
   cursor: pointer;
   float: right;
   word-break: break-all;
   word-wrap: break-word;
-}
-
+ }
 .facebook-right{
   float: left;
   cursor: pointer;
-}
+ }
 .google-left{
   float: right;;
   cursor: pointer;
-}
+ }
 .twitter-center{
   cursor: pointer;
+ }
+/*End of .contact-right (from line 107)*/
 
-}
-/*End of .contact-right*/
 /*.contact-left*/
 .contact-left{
   float: left;
   cursor: pointer;
   word-break: break-all;
   word-wrap: break-word;
-}  
+ }  
 .twitch-right{
   float: left;
   cursor: pointer;
-}
+ }
 .github-left{
   float: right;;
   cursor: pointer;
-}
+ }
 .vk-center{
 
   cursor: pointer;
-}
-/*End of .contact-left*/
-/*End of Footer
-*/
+ }
+/*End of .contact-left(from line 127 )*/
 
+/*End of Footer(from line 107 )*/
+
+footer{
+  font-size: 12px;
+ }
 
 /*style links*/
-a:link{
- color: #404040;
-}
-a:visited {
- color: aqua;
-}
-a:hover {
- color: red;
-}
-a:active {
- color: yellow;
-}
 a{
-
 text-decoration: none;
 }
+a:link{
+  color: #404040;
+ }
+a:visited{
+  color: #404040;
+ }
+a:hover {
+  color: red;
+ }
+a:active {
+  color: yellow;
+ }
 
-/*finish style links*/
+
+/*finish style links (from line 154)*/
