@@ -1,172 +1,201 @@
  /*height of all elements*/
-.iss{
-  height:  60px  ;
- }
-.image-wot{
-  height: 390px;
- }
-footer{
-  height: 100px;
- }
-#rightcol{
-  height: 4150px;
- }
-#leftcol{
-  height: 4150px;
- }
+    footer{
+          height: auto;  
+      }   
+    .iss{
+          height:  60px  ;
+      }
+    .image-wot{
+          height: 350px;
+      }
+    #rightcol{
+          height: 4150px;
+      }
+    #leftcol{
+          height: 4150px;
+      }
 /*END(from line 1)*/
 
 /*width of all elements*/
-.img-is, .img-is3, .img-is6{
-  width: 450px;
- }
-.img-oho, .img-oi {
-  width: 450px;
- }
-.img-e100, .img-tigr1, .img-leopard1{
-  width: 450px;
- }
-.iss{
-  width: 90px ;
- }
+    .img-is, .img-is3, .img-is6{
+          width: 450px;
+      }
+    .img-e100, .img-tigr1, .img-leopard1{
+          width: 450px;
+      }     
+    .img-oho, .img-oi {
+          width: 450px;
+      }
+    .iss{
+          width: 90px ;
+      }
 /*END(from line 19)*/
 
 
 /*search-Form*/
-.search{
-  border-bottom: 2px solid red;
- }
-.search-btn{
-  border: 2px solid black;
-  cursor: pointer;
- }
+    .search-btn{
+          border: 2px solid black;
+          cursor: pointer;
+      }
+    .search{
+          border-bottom: 2px solid red;
+      }
+
 /*finish style search-Form(from line 35)*/
 
 
-/*Images of tanks*/
-.img-is, .img-is3, .img-is6{
-  border: 5px solid black;        
-  cursor: pointer;
- }
-.img-oho, .img-oi {
-  border: 5px solid black;        
-  cursor: pointer;
- }
-.img-e100, .img-tigr1, .img-leopard1{
-  border: 5px solid black;        
-  cursor: pointer;
- }
-.image-wot{
-  background-image: url("images/wot-t.jpg");
-  background-repeat: no-repeat;
-  cursor: pointer;
- }
-.navbar{
-  padding: 0.4%;
-  border-bottom: 5px solid white;
- }
-/*END OF Images of tanks(from line 46)*/
+/*Images of tanks/background-image*/
+    .image-wot{
+          background-image: url("images/wot-t.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          cursor: pointer;
+      }
+    .navbar{
+          padding: 0.4%;
+          border-bottom: 5px solid white;
+      }
+    .img-is, .img-is3, .img-is6{
+          border: 5px solid black;        
+          cursor: pointer;
+      }
+    .img-e100, .img-tigr1, .img-leopard1{
+          border: 5px solid black;        
+          cursor: pointer;
+      }
+    .img-oho, .img-oi {
+          border: 5px solid black;        
+          cursor: pointer;
+      }     
+    
+/*END OF Images of tanks(from line 47)*/
 
 
 /*color and background-color of elements(without links)*/
-.header{
-  background-color: #282828  ;  
-  color: white;
- }
-footer{
-  background-color: #101010  ;
-  color: #404040  ;
- }
-#rightcol{
-  background-color: #101010  ;  
- }
-#leftcol{
-  background-color: #101010  ;  
- }
-/*END(from line 71)*/
+    .header{
+          background-color: #282828  ;  
+          color: white;
+      }
+    #leftcol{
+          background-color: #101010  ;  
+      }
+    #rightcol{
+          background-color: #101010  ;  
+      }
+    footer{
+          background-color: #101010  ;
+          color: #404040  ;
+      }     
+    
+/*END(from line 74)*/
 
 h1{
-  text-align: center; 
+     text-align: center; 
  }
 
 /*left and right colums*/
-#rightcol{
-  float: right ;
-  word-break: break-all;
-  word-wrap: break-word;
- }
-#leftcol{
-  float: left;
-  word-break: break-all;
-  word-wrap: break-word;
- }
-/* END OF left and right colums(from line 92)*/
+    #leftcol{
+          float: left;
+          word-break: break-all;
+          word-wrap: break-word;
+      }
+    #rightcol{
+          float: right ;
+          word-break: break-all;
+          word-wrap: break-word;
+      }
+/* END OF left and right colums(from line 96)*/
 
 /*!!FOOTER!! */
 
 /*.contact-right*/
-.contact-right{
-  cursor: pointer;
-  float: right;
-  word-break: break-all;
-  word-wrap: break-word;
- }
-.facebook-right{
-  float: left;
-  cursor: pointer;
- }
-.google-left{
-  float: right;;
-  cursor: pointer;
- }
-.twitter-center{
-  cursor: pointer;
- }
-/*End of .contact-right (from line 107)*/
+    .contact-right{
+          cursor: pointer;
+          float: right;
+          word-break: break-all;
+          word-wrap: break-word;
+      }
+
+/*End of .contact-right (from line 111)*/
 
 /*.contact-left*/
-.contact-left{
-  float: left;
-  cursor: pointer;
-  word-break: break-all;
-  word-wrap: break-word;
- }  
-.twitch-right{
-  float: left;
-  cursor: pointer;
- }
-.github-left{
-  float: right;;
-  cursor: pointer;
- }
-.vk-center{
+    .contact-left{
+          float: left;
+          cursor: pointer;
+          word-break: break-all;
+          word-wrap: break-word;
+      }  
 
-  cursor: pointer;
- }
-/*End of .contact-left(from line 127 )*/
+/*End of .contact-left(from line 119 )*/
 
-/*End of Footer(from line 107 )*/
+
+/*End of Footer(from line 109 )*/
+
 
 footer{
-  font-size: 12px;
+     font-size: 12px;
  }
 
 /*style links*/
-a{
-text-decoration: none;
-}
-a:link{
-  color: #404040;
- }
-a:visited{
-  color: #404040;
- }
-a:hover {
-  color: red;
- }
-a:active {
-  color: yellow;
- }
+    a{
+          text-decoration: none;
+      }
+    a:link{
+          color: #404040;
+      }
+    a:visited{
+          color: #404040;
+      }
+    a:hover {
+          color: red;
+      }
+    a:active {
+          color: yellow;
+     }
 
 
-/*finish style links (from line 154)*/
+/*finish style links (from line 139)*/
+
+
+/*!! FOOTER-icons (content) !! */
+/* From .contact-right*/
+    .facebook-right{
+
+      }
+    .google-left{
+
+      }
+    .twitter-center{
+
+      }
+/*End(from line 161)*/
+/* From .contact-left*/
+    .twitch-right{
+
+      }
+    .github-left{
+
+      }
+    .vk-center{
+
+      }
+/*End of .contact-left(from line 173 )*/
+/*End of FOOTER-icons (content) (from line 161 )*/
+
+
+/*display of footer-icons(content)*/
+     #footer-1{
+          display: inline;
+      }
+
+     #footer-2{
+          display: inline;
+      }
+     .site-content{
+          text-align: center;
+
+      }
+
+/*End (from line 186)*/
+
+
