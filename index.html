@@ -5,15 +5,26 @@
 			<title>My first Site</title>
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<!-- Boostrap	 -->
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<!-- END -->
 
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-			<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+			<!-- Icons -->
+				<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+			<!-- END -->
+
 			<!-- FONTS -->
 				<link href="https://fonts.googleapis.com/css?family=Anton|Arvo|Indie+Flower|Kumar+One|Lobster" rel="stylesheet">
-			<!-- END of FONTS -->
-			<link rel="stylesheet" href="style.css">
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<!-- END  -->
+
+			<!-- Css in document -->
+				<link rel="stylesheet" href="style.css">
+			<!-- END -->
+			
+			<!-- JavaScript -->
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<!-- END -->
 	</head>
 	<body  data-spy="scroll" data-target=".navbar">
 		<div class="header">
@@ -65,7 +76,9 @@
 						<div class="navbar-form navbar-left">
 								<form class="search-form">
 									<div class="form-group"> 
-										<input list="tanks" placeholder="Search" class=" search form-control">
+										<input list="tanks" placeholder="Search" 
+										onfocus="this.style.borderBottom='3px solid #0000b3';" onfocusout="this.style.borderBottom='3px solid  #008000' " 
+										class=" search form-control">
 										<datalist id="tanks">
 											<option value="Ис"></option>
 											<option value="Ис 3"></option>
@@ -79,7 +92,7 @@
 											<option value="O-Ni"></option>
 										</datalist> 
 									</div>
-									<button type="submit" class="btn search-btn btn-primary"><i class="fa fa-paper-plane">Submit</i></button>
+									<button type="submit" class="btn search-btn btn-primary"><i class="fa fa-paper-plane"> Submit</i></button>
 							 	</form>
 						</div>
 
@@ -154,11 +167,12 @@
 						<img class="img-oi" src="images/oi.jpg" alt="Ои">
 						<p>О-И — разработанное Японией в 1936—1945 годах семейство сверхтяжелых танков, которые должны были использоваться для нападения на СССР, Китай, и для обороны Японии от американских линкоров и десанта. Достоверные сведения о начале постройки опытного образца отсутствуют. Проектировался в различных вариантах</p>
 					</div>
+					<br><br><br> <br><br><br> <br>
+
 				</div>
 			</div>
-
 				<div class="col-md-2" id="rightcol"></div>
-				<br><br>
+				
 			</div>
                
 		</header>
@@ -166,20 +180,20 @@
   		
      	<footer class="container-fluid text-center">
      	     <div class="col-md-6 contact-left" > 
-	     		<p class="text-center">Contact us in: </p>
-	     			<div id="footer-1">
-		     			<p class="google-left btn btn-link"><a href=" https://accounts.google.com/Login?hl=ru" target="_blank">  <i class="fa fa-google-plus" aria-hidden="true">Google+</i></a></p>
-		     			<p class="facebook-right btn btn-link"><a href="https://www.facebook.com/" target="_blank"> <i class="fa fa-facebook-square" aria-hidden="true">Facebook</i></a> </p>
-		     			<p class="twitter-center btn btn-link"><a href="https://twitter.com/login?lang=ru" target="_blank"> <i class="fa fa-twitter" aria-hidden="true">Twiter</i></a></p>
+	     		<p class="text-center  contactUsIn-left "> Contact us in: </p>
+	     			<div id="footer-siGoogleFacebookTwitter">
+		     			<p class="google+ btn btn-link"><a href=" https://accounts.google.com/Login?hl=ru" target="_blank">  <i class="fa fa-google-plus" aria-hidden="true"> Google+</i></a></p>
+		     			<p class="facebook btn btn-link"><a href="https://www.facebook.com/" target="_blank"> <i class="fa fa-facebook-square" aria-hidden="true"> Facebook</i></a> </p>
+		     			<p class="twitter btn btn-link"><a href="https://twitter.com/login?lang=ru" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"> Twitter</i></a></p>
 	     			</div>
      		</div>
          	
          		<div class="col-md-6 contact-right" > 
-	     		<p class="text-center">Contact us in: </p>
-	     			<div id="footer-2">
-		     			<p class="github-left btn btn-link"><a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true">GitHub</i></a></p>
-		     			<p class="vk-center btn btn-link"><a href="https://m.vk.com/login" target="_blank"><i class="fa fa-vk" aria-hidden="true">Vk</i></a></p>
-		     			<p class="twitch-right btn btn-link"><a href="https://passport.twitch.tv/authentications/new?client_id=36926892495301a63b2e9350a38d3d6dbf72ad81e571a3ebba4687250ec8f352c70b3e91229602f73e1335528f3caa00a5cf513f484d7003784e722f2ce7a216&embed=0&error_code=&nonce=f6da8fb72abce38c9ef46206a342790fa97a5e49&redirect_uri=https%3A%2F%2Fwww.twitch.tv%2F&response_type=code&scope=openid&state=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWRpcmVjdF9wYXRoIjoiaHR0cHM6Ly93d3cudHdpdGNoLnR2LyJ9.LJqY_XciO98NqOlYWbBNUjrpI5jG3GKTJi7nifp7-wc&stay_embedded=0&sudo_reason=&username=" target="_blank"><i class="fa fa-twitch">Twitch</i></a></p>
+	     		<p class="text-center  contactUsIn-right"> Contact us in: </p>
+	     			<div id="footer-GithubVkTwitch">
+		     			<p class="github btn btn-link"><a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"> GitHub</i></a></p>
+		     			<p class="vk btn btn-link"><a href="https://m.vk.com/login" target="_blank"><i class="fa fa-vk" aria-hidden="true"> Vk</i></a></p>
+		     			<p class="twitch btn btn-link"><a href="https://passport.twitch.tv/authentications/new?client_id=36926892495301a63b2e9350a38d3d6dbf72ad81e571a3ebba4687250ec8f352c70b3e91229602f73e1335528f3caa00a5cf513f484d7003784e722f2ce7a216&embed=0&error_code=&nonce=f6da8fb72abce38c9ef46206a342790fa97a5e49&redirect_uri=https%3A%2F%2Fwww.twitch.tv%2F&response_type=code&scope=openid&state=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWRpcmVjdF9wYXRoIjoiaHR0cHM6Ly93d3cudHdpdGNoLnR2LyJ9.LJqY_XciO98NqOlYWbBNUjrpI5jG3GKTJi7nifp7-wc&stay_embedded=0&sudo_reason=&username=" target="_blank"><i class="fa fa-twitch"> Twitch</i></a></p>
 	     			</div>
      		</div>
    		</footer>

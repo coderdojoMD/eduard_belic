@@ -1,4 +1,4 @@
- /*height of all elements*/
+/*height of all elements*/
     footer{
           height: auto;  
       }   
@@ -9,10 +9,10 @@
           height: 350px;
       }
     #rightcol{
-          height: 4150px;
+          height: 4134px;
       }
     #leftcol{
-          height: 4150px;
+          height: 4134px;
       }
 /*END(from line 1)*/
 
@@ -32,13 +32,13 @@
 /*END(from line 19)*/
 
 
-/*search-Form*/
+/*search-Form (from navigation-bar)*/
     .search-btn{
           border: 2px solid black;
           cursor: pointer;
       }
     .search{
-          border-bottom: 2px solid red;
+          border-bottom: 3px solid red;
       }
 
 /*finish style search-Form(from line 35)*/
@@ -110,6 +110,7 @@ h1{
 
 /*.contact-right*/
     .contact-right{
+          font-size: 12px;
           cursor: pointer;
           float: right;
           word-break: break-all;
@@ -120,6 +121,7 @@ h1{
 
 /*.contact-left*/
     .contact-left{
+          font-size: 12px;
           float: left;
           cursor: pointer;
           word-break: break-all;
@@ -151,7 +153,7 @@ footer{
       }
     a:active {
           color: yellow;
-     }
+      }
 
 
 /*finish style links (from line 139)*/
@@ -159,24 +161,25 @@ footer{
 
 /*!! FOOTER-icons (content) !! */
 /* From .contact-right*/
-    .facebook-right{
+
+    .facebook{
 
       }
-    .google-left{
+    .google+{
 
       }
-    .twitter-center{
+    .twitter{
 
       }
 /*End(from line 161)*/
 /* From .contact-left*/
-    .twitch-right{
+    .twitch{
 
       }
-    .github-left{
+    .github{
 
       }
-    .vk-center{
+    .vk{
 
       }
 /*End of .contact-left(from line 173 )*/
@@ -184,18 +187,38 @@ footer{
 
 
 /*display of footer-icons(content)*/
-     #footer-1{
+     #footer-GoogleFacebookTwitter{
           display: inline;
       }
 
-     #footer-2{
+     #footer-GithubVkTwitch{
           display: inline;
       }
-     .site-content{
-          text-align: center;
 
-      }
 
 /*End (from line 186)*/
 
+/*White Borders line ARROUND the .col-md-8,  #leftcol and  #rightcol*/
+     .col-md-8{
+          border-left: 3px solid #808080   ;
+          border-right: 3px solid #808080  ;
+          border-bottom: 3px solid  #808080  ;
+      }
+     #leftcol, #rightcol{
+          border-top: 3px solid #808080 ;
+          border-bottom: 3px solid #808080   ;
+      }
+/*END (from line 201)*/
 
+
+.site-content{
+     text-align: center;
+ }
+
+
+/*Size of words "Contact us in: " (part of footer)*/
+.contactUsIn-left, .contactUsIn-right{
+     font-size: 17px;
+     word-spacing: 5px;
+ }
+/*END(from line 219) */
