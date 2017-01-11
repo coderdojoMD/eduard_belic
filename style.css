@@ -1,48 +1,43 @@
+
 /*height of all elements*/
     footer{
           height: auto;  
+          width: auto;
       }   
-    .iss{
+
+    .nav-sssr-img, .nav-german-img, .nav-japan-img{
           height:  60px  ;
       }
+
     .image-wot{
           height: 350px;
       }
-    #rightcol{
-          height: 4134px;
-      }
-    #leftcol{
-          height: 4134px;
-      }
-/*END(from line 1)*/
 
-/*width of all elements*/
-    .img-is, .img-is3, .img-is6{
-          width: 450px;
-      }
-    .img-e100, .img-tigr1, .img-leopard1{
-          width: 450px;
-      }     
-    .img-oho, .img-oi {
-          width: 450px;
-      }
-    .iss{
-          width: 90px ;
-      }
-/*END(from line 19)*/
 
+/*width of site's image(content(not navbar))*/
+    #site-content_img-is, #site-content_img-is3, #site-content_img-is6{
+          width: 450px;
+      }
+    #site-content_img-e100, #site-content_img-tigr1, #site-content_img-leopard1{
+          width: 450px;
+      }    
+    #site-content_img-oho, #site-content_img-oi {
+          width: 450px;
+      }
+    #nav-sssr-img, #nav-german-img, #nav-japan-img{
+          width: 110px;
+      }
 
 /*search-Form (from navigation-bar)*/
     .search-btn{
-          border: 2px solid black;
           cursor: pointer;
+          width: 80px ;
+          height: 40px;
       }
-    .search{
+    #inputSearch{
           border-bottom: 3px solid red;
+          width: 200px;
       }
-
-/*finish style search-Form(from line 35)*/
-
 
 /*Images of tanks/background-image*/
     .image-wot{
@@ -55,24 +50,22 @@
           padding: 0.4%;
           border-bottom: 5px solid white;
       }
-    .img-is, .img-is3, .img-is6{
+    #site-content_img-is, #site-content_img-is3, #site-content_img-is6{
           border: 5px solid black;        
           cursor: pointer;
       }
-    .img-e100, .img-tigr1, .img-leopard1{
+    #site-content_img-e100, #site-content_img-tigr1, #site-content_img-leopard1{
           border: 5px solid black;        
           cursor: pointer;
       }
-    .img-oho, .img-oi {
+    #site-content_img-oho, #site-content_img-oi {
           border: 5px solid black;        
           cursor: pointer;
       }     
     
-/*END OF Images of tanks(from line 47)*/
-
 
 /*color and background-color of elements(without links)*/
-    .header{
+     .header{
           background-color: #282828  ;  
           color: white;
       }
@@ -86,8 +79,9 @@
           background-color: #101010  ;
           color: #404040  ;
       }     
-    
-/*END(from line 74)*/
+     #afla_text{
+          color: green;
+      }
 
 h1{
      text-align: center; 
@@ -104,7 +98,6 @@ h1{
           word-break: break-all;
           word-wrap: break-word;
       }
-/* END OF left and right colums(from line 96)*/
 
 /*!!FOOTER!! */
 
@@ -117,7 +110,6 @@ h1{
           word-wrap: break-word;
       }
 
-/*End of .contact-right (from line 111)*/
 
 /*.contact-left*/
     .contact-left{
@@ -128,25 +120,21 @@ h1{
           word-wrap: break-word;
       }  
 
-/*End of .contact-left(from line 119 )*/
-
-
-/*End of Footer(from line 109 )*/
-
+/*END of footer*/
 
 footer{
      font-size: 12px;
  }
 
-/*style links*/
+/*style (footer) links*/
     a{
           text-decoration: none;
       }
     a:link{
-          color: #404040;
+          color: white;
       }
     a:visited{
-          color: #404040;
+          color: white;
       }
     a:hover {
           color: red;
@@ -156,7 +144,6 @@ footer{
       }
 
 
-/*finish style links (from line 139)*/
 
 
 /*!! FOOTER-icons (content) !! */
@@ -171,7 +158,6 @@ footer{
     .twitter{
 
       }
-/*End(from line 161)*/
 /* From .contact-left*/
     .twitch{
 
@@ -182,7 +168,6 @@ footer{
     .vk{
 
       }
-/*End of .contact-left(from line 173 )*/
 /*End of FOOTER-icons (content) (from line 161 )*/
 
 
@@ -196,19 +181,17 @@ footer{
       }
 
 
-/*End (from line 186)*/
 
 /*White Borders line ARROUND the .col-md-8,  #leftcol and  #rightcol*/
      .col-md-8{
-          border-left: 3px solid #808080   ;
-          border-right: 3px solid #808080  ;
-          border-bottom: 3px solid  #808080  ;
+          border-left: 3px solid #606060   ;
+          border-right: 3px solid #606060   ;
+          border-bottom: 3px solid  #606060   ;
       }
      #leftcol, #rightcol{
-          border-top: 3px solid #808080 ;
-          border-bottom: 3px solid #808080   ;
+          border-top: 3px solid #606060  ;
+          border-bottom: 3px solid #606060   ;
       }
-/*END (from line 201)*/
 
 
 .site-content{
@@ -217,8 +200,51 @@ footer{
 
 
 /*Size of words "Contact us in: " (part of footer)*/
-.contactUsIn-left, .contactUsIn-right{
-     font-size: 17px;
-     word-spacing: 5px;
+     .contactUsIn-left, .contactUsIn-right{
+          font-size: 17px;
+          word-spacing: 5px;
+      }
+
+.col-md-2{
+     padding-bottom: 4408px
  }
-/*END(from line 219) */
+
+/*
+Img from navbar(from dropdown)*/
+     #nav-sssr-is, #nav-sssr-is3, #nav-sssr-is6,   #nav-german-tigr1, #nav-german-leopard1, #nav-german-e100,   #nav-japan-oho, #nav-japan-oi{
+          text-align: center;
+          border: 5px solid black;
+      }
+
+/*#afla " section*/
+     #afla{
+          padding-top: 30px;
+      }
+     #afla_text{
+          font-size: 20px;
+      }
+
+#site-content_is,    #site-content_is3,      #site-content_is6, 
+#site-content_tigr1, #site-content_leopard1, #site-content_e100, 
+#site-content_oho,   #site-content_oi      {
+  padding-top: 50px;
+ }
+
+#col{
+  padding-bottom: 158px;
+ }
+
+/*Font-Family of elements*/
+     h1, h2{
+          font-family: 'Pacifico', cursive;
+      }
+     footer{
+          font-family: 'Lobster Two', cursive;
+      }
+     li, p,nav{
+          font-family: 'Ruslan Display', cursive;
+      }
+     .dropdown-menu {
+          background-color: #555555;
+          font-family: 'Pacifico', cursive;  
+      }

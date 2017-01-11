@@ -1,35 +1,33 @@
 
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 	<head>
 			<title>My first Site</title>
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<!-- Boostrap	 -->
 				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-			<!-- END -->
 
-			<!-- Icons -->
 				<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-			<!-- END -->
 
-			<!-- FONTS -->
-				<link href="https://fonts.googleapis.com/css?family=Anton|Arvo|Indie+Flower|Kumar+One|Lobster" rel="stylesheet">
-			<!-- END  -->
+				<!-- Fonts for english characters	 -->
+					<link href="https://fonts.googleapis.com/css?family=Anton|Lobster+Two|Oswald|Pacifico|Passion+One" rel="stylesheet">
+				<!-- END -->
+				
+				<!-- Fonts for russian characters -->
+					<link href="https://fonts.googleapis.com/css?family=Rubik+One|Ruslan+Display|Russo+One" rel="stylesheet">
+				<!-- END -->
 
-			<!-- Css in document -->
 				<link rel="stylesheet" href="style.css">
-			<!-- END -->
-			
-			<!-- JavaScript -->
+
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-			<!-- END -->
 	</head>
 	<body  data-spy="scroll" data-target=".navbar">
 		<div class="header">
 		<header>
-			<div class="image-wot" usemap="#Map"></div>
+			<div class="image-wot" usemap="#Map">
+
+			</div>
 			<nav class="navbar navbar-inverse " >
 					<div class="container-fluid">
 						<div class="navbar-header">
@@ -37,37 +35,33 @@
 						</div>
 
 						<ul class="nav navbar-nav nav-content">
-							
-								<li class="active"><a href="#home">Home</a>
+								<li class="active"><a href="#site-content_home">Home</a>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#ssr">ССCР <span class="caret"></span></a>
+									<ul class="dropdown-menu"> 
+										<li><a href="#site-content_is">Ис   <div 	id="nav-sssr-is"><img class="nav-sssr-img" src="images/indexs.jpg" alt="Is"></div></a></li>
+										<li><a href="#site-content_is3">Ис 3   <div id="nav-sssr-is3"><img class="nav-sssr-img" src="images/das.jpg" alt="Is3"></div></a></li>
+										<li><a href="#site-content_is6">Ис 6  <div id="nav-sssr-is6"><img class="nav-sssr-img" src="images/index.jpg" alt="Is6"></div></a></li>
+									</ul>
 								</li>
 							
 							
 								<li class="dropdown">
-									<a class="dropdown-toggle" data-toggle="dropdown" href="#ssr">ССCР<span class="caret"></span></a>
-											<ul class="dropdown-menu">
-												<li><a href="#is">Ис   <div class="row"><img class="iss" src="images/indexs.jpg" alt=""></div></a></li>
-												<li><a href="#is3">Ис 3   <div class="row"><img class="iss" src="images/das.jpg" alt=""></div></a></li>
-												<li><a href="#is6">Ис 6  <div class="row"><img class="iss"src="images/index.jpg" alt=""></div></a></li>
-											</ul>
-
-								</li>
-							
-							
-								<li class="dropdown">
-									<a class="dropdown-toggle" data-toggle="dropdown" href="#german">Германия<span class="caret"></span></a>
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#german">Германия <span class="caret"></span></a>
 										<ul class="dropdown-menu">
-											<li><a href="#tigr1">Тигр 1<div class="row"><img class="iss" src="images/tigr1.jpg" alt=""></div></a></li>
-											<li><a href="#leopard1">Леопард 1 <div class="row">  <img class="iss" src="images/leopard1.jpg" alt=""><div></a></li>
-											<li><a href="#e100">E 100   <div class="row"><img class="iss" src="images/e100.jpg" alt=""></div></a></li>
+											<li><a href="#site-content_tigr1">Тигр 1 <div id="nav-german-tigr1" ><img class="nav-german-img" src="images/tigr1.jpg" alt="Tiger1"></div></a></li>
+											<li><a href="#site-content_leopard1">Леопард 1 <div  id="nav-german-leopard1"><img class="nav-german-img" src="images/leopard1.jpg" alt="Leopard1"></div></a></li>
+											<li><a href="#site-content_e100">E 100   <div id="nav-german-e100"><img class="nav-german-img" src="images/e100.jpg" alt="E100"></div></a></li>
 										</ul>
 								</li>
 							
 							
 								<li class="dropdown">
-									<a class="dropdown-toggle" data-toggle="dropdown" href="#japan">Япония<span class="caret"></span></a>
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#japan">Япония  <span class="caret"></span></a>
 										<ul class="dropdown-menu">
-												<li><a href="#oho">Оhо   <div class="row"><img class="iss" src="images/oho.jpg" alt=""></div></a></li>
-												<li><a href="#oi"> Ои  <div class="row"><img class="iss" src="images/oi.jpg" alt=""></div></a></li>
+												<li><a href="#site-content_oho">О-Hо   <div id="nav-japan-oho"><img class="nav-japan-img" src="images/oho.jpg" alt="O-Ho"></div></a></li>
+												<li><a href="#site-content_oi"> Оi  <div id="nav-japan-oi"><img class="nav-japan-img" src="images/oi.jpg" alt="Oi"></div></a></li>
 										</ul>
 								</li>
 							
@@ -76,24 +70,36 @@
 						<div class="navbar-form navbar-left">
 								<form class="search-form">
 									<div class="form-group"> 
-										<input list="tanks" placeholder="Search" 
-										onfocus="this.style.borderBottom='3px solid #0000b3';" onfocusout="this.style.borderBottom='3px solid  #008000' " 
-										class=" search form-control">
+										<input list="tanks" placeholder="Search" type="search" id="inputSearch" class="form-control">
 										<datalist id="tanks">
+											<option value=" " >CCCР</option>
 											<option value="Ис"></option>
 											<option value="Ис 3"></option>
 											<option value="Ис 5"></option>
 											<option value="Ис 6"></option>
+											<option value=" " >Германия</option>
 											<option value="Тигр 1"></option>
 											<option value="Леопард 1"></option>
 											<option value="E 100"></option>
+											<option value=" " >Япония</option>
 											<option value="O-i"></option>
 											<option value="O-Ho"></option>
 											<option value="O-Ni"></option>
 										</datalist> 
 									</div>
-									<button type="submit" class="btn search-btn btn-primary"><i class="fa fa-paper-plane"> Submit</i></button>
-							 	</form>
+										<button type="submit" class="btn search-btn btn-primary"><i class="fa fa-paper-plane"> Submit</i></button>
+									<script type="text/javascript">
+										var inputSearch = document.getElementById("inputSearch");
+										inputSearch.addEventListener("click", inputFunction);
+										function inputFunction(){
+											inputSearch.style.borderBottom="3px solid #0000b3";
+										};
+										inputSearch.addEventListener("blur", inputFunction2);
+										function inputFunction2(){
+											inputSearch.style.borderBottom="3px solid green";
+										};
+									</script>
+							 	</form> 			
 						</div>
 
 						<ul class="nav navbar-nav navbar-right">
@@ -104,98 +110,127 @@
 						</ul>
 					</div>
 			</nav>
-			
+		</header>	
 			<div class="row content">
 			<div class="col-md-2" id="leftcol"> </div>
 			<div class="col-md-8">
+			<div id="col">
 				<div class="site-content">
-					<div id="home">
+					<div id="site-content_home">
 							<h1> Home </h1>
 							<h2>This site is about <abbr title="World of Tanks">Wot</abbr></h2>
 							<p>World of Tanks — это массовая многопользовательская онлайн-игра, полностью посвященная бронированным машинам середины XX века. Игроки получат возможность плечом к плечу сражаться с поклонниками стальных гигантов со всех уголков планеты, отстаивая свои претензии на мировое танковое господство.</p>
 					</div>
-					<br><br><br> 
 
-					<div id="is"> 
+
+					<div id="site-content_is"> 
 						<h1>Ис 1</h1>
-						<img  class="img-is" src="images/indexs.jpg" alt="Is 1">
+						<img  id="site-content_img-is" src="images/indexs.jpg" alt="Is 1">
 						<p>ИС-1 — советский тяжёлый танк периода Второй мировой войны. Аббревиатура ИС означает «Иосиф Сталин» — официальное название серийных советских тяжёлых танков выпуска 1943—1953 гг. Индекс 1 соответствует первой серийной модели танка этого семейства. В годы Второй мировой войны вместе с обозначением ИС-1 на равных использовалось название ИС-85, в этом случае индекс 85 означает калибр основного вооружения машины.</p>
 								
 					</div>
-					<br><br><br>
 
-					<div id="is3">
+
+					<div id="site-content_is3">
 						<h1 > Ис 3</h1>
-						<img class="img-is3" src="images/das.jpg" alt="Is3">
+						<img id="site-content_img-is3" src="images/das.jpg" alt="Is3">
 						<p>ИС-3 (Объект 703) — советский тяжёлый танк разработки периода Великой Отечественной войны, запущенный в серийное производство в последние её дни и не успевший принять в ней участие. Поэтому эту боевую машину чаще считают одним из первых послевоенных советских танков. Аббревиатура ИС означает «Иосиф Сталин» — официальное название серий советских тяжёлых танков выпуска 1943—1953 гг. Индекс 3 соответствует третьей серийной модели танка этого семейства. Из-за характерной формы верхней лобовой части корпуса получил прозвище «Щука».</p>
 					</div>
-					<br><br><br>
 
-					<div id="is6">
+
+					<div id="site-content_is6">
 						<h1>  Ис 6 </h1>
-						<img class="img-is6" src="images/index.jpg" alt="Is6">
+						<img id="site-content_img-is6" src="images/index.jpg" alt="Is6">
 						<p>ИС-6 — опытный тяжелый советский танк времен Второй мировой войны.</p>
 					</div>
-					<br><br><br>
-					<div id="tigr1">
+
+					<div id="site-content_tigr1">
 						<h1> Тигр 1 </h1>
-						<img class="img-tigr1" src="images/tigr1.jpg" alt="Tiger 1">
+						<img id="site-content_img-tigr1" src="images/tigr1.jpg" alt="Tiger 1">
 						<p>Panzerkampfwagen VI Ausf. H1, «Тигр» — немецкий тяжёлый танк времён Второй мировой войны, прототипом которого являлся танк VK4501 (H), разработанный в 1942 году фирмой «Хеншель» под руководством Эрвина Адерса. Наряду с прототипом фирмы «Хеншель» руководству Рейха был представлен и проект Фердинанда Порше — VK4501 (P), но выбор военной комиссии пал на вариант «Хеншель», хотя Гитлер более благоволил к изделию Порше.Общее количество выпущенных машин — 1354 единицы, включая 5 танков конструкции Порше.[источник не указан 75 дней]. Затраты на производство одного танка «Тигр» — 800 000 рейхсмарок (в два раза дороже любого танка тех времён).
 						В ведомственной сквозной классификации бронетехники нацистской Германии изначально танк получил обозначение Pz.Kpfw.VI Ausf.H1, индекс управления вооружений Sd.Kfz.182. В марте 1943 производственное обозначение изменили на Pz.Kpfw. Tiger, Sd.Kfz.181 (одновременно для новой модификации «Тигр-II» ввели обозначение Pz.Kpfw. Tiger Ausf. B, Sd.Kfz.182). Приказом Гитлера в январе 1944 г. танк был обозначен Panzerkampfwagen Tiger Ausf.E. После принятия на вооружение танков Tiger II, неофициально также использовалось название Tiger I, с добавлением римской единицы. Производственная модификация была при этом только одна, хотя в конструкцию танка вносились небольшие изменения.В советских документах танк «Тигр» обычно обозначался просто как T-6 или T-VI</p>
 					</div>
-					<br><br><br>
-					<div id="leopard1">
+
+					<div id="site-content_leopard1">
 						<h1> Леопард 1 </h1>
-						<img class="img-leopard1" src="images/leopard1.jpg" alt="Leopard1">
+						<img id="site-content_img-leopard1" src="images/leopard1.jpg" alt="Leopard1">
 						<p>Леопард 1 (нем. Leopard) — основной боевой танк ФРГ до 1980 г. Танк до сих пор находится на вооружении армий различных стран мира и постоянно модернизируется. Находился на вооружении Бундесвера вплоть до 2010 г.</p>
 					</div>
-					<br><br><br>
-					<div id="e100">
+
+					<div id="site-content_e100">
 						<h1> E 100 </h1>
-						<img class="img-is6" src="images/e100.jpg" alt="E 100">
+						<img id="site-content_img-e100" src="images/e100.jpg" alt="E 100">
 						<p>Е-100 — проект сверхтяжёлого танка с массой ~130-140 тонн, разрабатывался как альтернатива разработанному Ф. Порше сверхтяжёлому танку Maus, которая при сходных боевых характеристиках с «Маусом» будет достаточно технологичной для массового производства. Проектирование началось 30 июля 1943 года в Фридберге. Разработку конструкции и постройку опытного образца вела фирма «Adler». Несмотря на личный приказ Гитлера в конце 1944 года прекратить все работы над сверхтяжелыми танками (касающийся как Е-100, так и разрабатываемого параллельно с ним «Maus»), проектирование продолжалось медленными темпами и была начата постройка прототипа. Продолжались работы на заводе Henschel в Хаустенбеке и на полигоне Зеннелагер вплоть до окончания войны. Незавершенный опытный образец (шасси без башни) был захвачен в Зеннелагере на заводе «Хеншель» английскими войсками[2]. В июне 1945 года Е-100 был переправлен в Великобританию для всесторонних испытаний. Полуготовый Е-100 был отправлен на металлолом, посему до наших дней не сохранился.</p>
 					</div>
-					<br><br><br>
-					<div id="oho">
+					<div id="site-content_oho">
 						<h1> O-Ho </h1>
-						<img class="img-oho" src="images/oho.jpg" alt="Оho">
+						<img id="site-content_img-oho" src="images/oho.jpg" alt="Оho">
 						<p>O-Ho был дальнейшим развитием идеи сверхтяжёлого танка с улучшенной бронезащитой. Танк имел неплохое вооружение, дающее возможность вести круговой обстрел. Проект машины был свёрнут в связи с окончанием войны. Танк в завершённом виде построен не был, в боевых действиях не применялся.</p>
 					</div>
-					<br><br><br>
-					<div id="oi">
+
+					<div id="site-content_oi">
 						<h1> O-i </h1>
-						<img class="img-oi" src="images/oi.jpg" alt="Ои">
+						<img id="site-content_img-oi" src="images/oi.jpg" alt="Ои">
 						<p>О-И — разработанное Японией в 1936—1945 годах семейство сверхтяжелых танков, которые должны были использоваться для нападения на СССР, Китай, и для обороны Японии от американских линкоров и десанта. Достоверные сведения о начале постройки опытного образца отсутствуют. Проектировался в различных вариантах</p>
 					</div>
-					<br><br><br> <br><br><br> <br>
+					<div id="afla">
+						<p id="afla_text">Afla daca Esti prost</p>
+						<button class="btn btn-warning" id="afla_btn">Afla</button>
+						<script type="text/javascript">
+							var afla_btn= document.getElementById("afla_btn");
+							var afla_text= document.getElementById("afla_text");
+							afla_btn.addEventListener("click", function(){
+								afla_text.innerHTML="Tu Esti Prost ";
+								afla_text.contentEditable= true;	
+							});
+							afla_btn.addEventListener("dblclick", function(){
+								afla_text.innerHTML=" Tu esti cel mai destept";
+								afla_btn.style.visibility= "hidden";
+							});	
+						</script>
+					</div>	
 
 				</div>
 			</div>
+			</div>
 				<div class="col-md-2" id="rightcol"></div>
+				<!--  DE CE NU MERGE  ???????
+				 <script>
+					var paddingH = document.getElementById("col").style.paddingBottom; 
+					var paddingR = document.getElementById("rightcol").style.paddingBottom;
+					var paddingL = document.getElementById("leftcol").style.paddingBottom; 
+					 if( paddingH < paddingR) { alert("ds");
+					 	paddingH = paddingR;
+					 };
+
+					 if( paddingH < paddingL || paddingH < paddingL){
+					 	paddingH = paddingL;
+					 };
+				</script> -->
 				
 			</div>
-               
-		</header>
-		</div>
-  		
+   		</div>
+
      	<footer class="container-fluid text-center">
-     	     <div class="col-md-6 contact-left" > 
+
+	     	<div class="col-md-6 contact-left">
 	     		<p class="text-center  contactUsIn-left "> Contact us in: </p>
 	     			<div id="footer-siGoogleFacebookTwitter">
 		     			<p class="google+ btn btn-link"><a href=" https://accounts.google.com/Login?hl=ru" target="_blank">  <i class="fa fa-google-plus" aria-hidden="true"> Google+</i></a></p>
 		     			<p class="facebook btn btn-link"><a href="https://www.facebook.com/" target="_blank"> <i class="fa fa-facebook-square" aria-hidden="true"> Facebook</i></a> </p>
 		     			<p class="twitter btn btn-link"><a href="https://twitter.com/login?lang=ru" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"> Twitter</i></a></p>
-	     			</div>
-     		</div>
-         	
-         		<div class="col-md-6 contact-right" > 
+		     		</div>	
+		    </div>	
+
+         	<div class="col-md-6 contact-right">
 	     		<p class="text-center  contactUsIn-right"> Contact us in: </p>
 	     			<div id="footer-GithubVkTwitch">
 		     			<p class="github btn btn-link"><a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"> GitHub</i></a></p>
 		     			<p class="vk btn btn-link"><a href="https://m.vk.com/login" target="_blank"><i class="fa fa-vk" aria-hidden="true"> Vk</i></a></p>
 		     			<p class="twitch btn btn-link"><a href="https://passport.twitch.tv/authentications/new?client_id=36926892495301a63b2e9350a38d3d6dbf72ad81e571a3ebba4687250ec8f352c70b3e91229602f73e1335528f3caa00a5cf513f484d7003784e722f2ce7a216&embed=0&error_code=&nonce=f6da8fb72abce38c9ef46206a342790fa97a5e49&redirect_uri=https%3A%2F%2Fwww.twitch.tv%2F&response_type=code&scope=openid&state=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWRpcmVjdF9wYXRoIjoiaHR0cHM6Ly93d3cudHdpdGNoLnR2LyJ9.LJqY_XciO98NqOlYWbBNUjrpI5jG3GKTJi7nifp7-wc&stay_embedded=0&sudo_reason=&username=" target="_blank"><i class="fa fa-twitch"> Twitch</i></a></p>
 	     			</div>
-     		</div>
+     		</div>	
+
    		</footer>
 	</body>
 </html>

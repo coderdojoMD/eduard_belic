@@ -1,0 +1,11 @@
+//Link
+	<link href="https://fonts.googleapis.com/css?family=Anton|Lobster+Two|Oswald|Pacifico|Passion+One" rel="stylesheet">
+//END
+
+//How to use
+	font-family: 'Anton', sans-serif;
+	font-family: 'Lobster Two', cursive;
+	font-family: 'Oswald', sans-serif;
+	font-family: 'Pacifico', cursive;
+	font-family: 'Passion One', cursive;
+//END

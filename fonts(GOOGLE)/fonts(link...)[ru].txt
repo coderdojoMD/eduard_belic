@@ -1,0 +1,10 @@
+//Link
+	<link href="https://fonts.googleapis.com/css?family=Rubik+One|Ruslan+Display|Russo+One" rel="stylesheet">
+//END
+
+
+//How to use
+	font-family: 'Rubik One', sans-serif;
+	font-family: 'Russo One', sans-serif;
+	font-family: 'Ruslan Display', cursive;
+//END
